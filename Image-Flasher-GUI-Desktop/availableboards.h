@@ -2,7 +2,7 @@
 #define AVAILABLEBOARDS_H
 /*
  * File Name --> availableboards.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Brief	 --> Searches for all available boards and added them to comboboc in gui
  *               Searching is based on Configured values of

@@ -2,13 +2,12 @@
 #define COMMON_H
 /*
  * File Name --> common.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Brief	 --> Contain common structure of send/receive data of serial communication and
  *               order of shown elements in gui
  * Note      --> This file is common between GUI & Microcontroller.It's portable file between C & C++.
  * */
-
 #ifdef __cplusplus
 #include <QtGlobal>
 #include <array>
@@ -17,20 +16,6 @@
 #else
 #include "LIB/STD_TYPES.h"
 #endif
-
-/*
-==================================================
-  Start Section --> Common configurations
-==================================================
- */
-
-
-/*
-==================================================
-  End Section --> Common configurations
-==================================================
- */
-
 /*
 ==================================================
   Start Section --> Common datatypes
@@ -79,42 +64,42 @@
 #define APP_CONFIG_BUFFER_SIZE 4
 
 union UITxSerialDataFrame {
-	struct {
-		COMMON_u32   Command;
-		COMMON_u32   Flags;
-		COMMON_u32   Parameter1;
-		COMMON_u32   Parameter2;
-	};
-	/*HOST_CMD_UPDATE_VERSION*/
-	struct {
-		COMMON_u32   Version_Command;
-		COMMON_u32   Version_Flags;
-		COMMON_u32   Version_MajorVersion;
-		COMMON_u32   Version_MinorVersion;
-	};
-	/*HOST_CMD_ERASE_SECTORS or HOST_CMD_ERASE_RANGE_OF_SECTORS*/
-	struct {
-		COMMON_u32   EraseSectors_Command;
-		COMMON_u32   EraseSectors_Sectors;
-		COMMON_u32   EraseSectors_FromSector;
-		COMMON_u32   EraseSectors_ToSector;
-	};
-	/*HOST_CMD_WRITE_32BIT_DATA_AT or HOST_CMD_WRITE_16BIT_DATA_AT or HOST_CMD_WRITE_8BIT_DATA_AT*/
-	struct {
-		COMMON_u32   Write_Command;
-		COMMON_u32   Write_Reserved;
-		COMMON_u32   Write_Address;
-		COMMON_u32   Write_Value;
-	};
+    struct {
+        COMMON_u32   Command;
+        COMMON_u32   Flags;
+        COMMON_u32   Parameter1;
+        COMMON_u32   Parameter2;
+    };
+    /*HOST_CMD_UPDATE_VERSION*/
+    struct {
+        COMMON_u32   Version_Command;
+        COMMON_u32   Version_Flags;
+        COMMON_u32   Version_MajorVersion;
+        COMMON_u32   Version_MinorVersion;
+    };
+    /*HOST_CMD_ERASE_SECTORS or HOST_CMD_ERASE_RANGE_OF_SECTORS*/
+    struct {
+        COMMON_u32   EraseSectors_Command;
+        COMMON_u32   EraseSectors_Sectors;
+        COMMON_u32   EraseSectors_FromSector;
+        COMMON_u32   EraseSectors_ToSector;
+    };
+    /*HOST_CMD_WRITE_32BIT_DATA_AT or HOST_CMD_WRITE_16BIT_DATA_AT or HOST_CMD_WRITE_8BIT_DATA_AT*/
+    struct {
+        COMMON_u32   Write_Command;
+        COMMON_u32   Write_Reserved;
+        COMMON_u32   Write_Address;
+        COMMON_u32   Write_Value;
+    };
 
 
 #ifdef __cplusplus
-	std::array<COMMON_u32, APP_CONFIG_BUFFER_SIZE> Buffer;
+    std::array<COMMON_u32, APP_CONFIG_BUFFER_SIZE> Buffer;
 #else
-	COMMON_u32 Buffer [APP_CONFIG_BUFFER_SIZE];
-	COMMON_u8  Buffer_u8 [4*APP_CONFIG_BUFFER_SIZE];
+COMMON_u32 Buffer [APP_CONFIG_BUFFER_SIZE];
+COMMON_u8  Buffer_u8 [4*APP_CONFIG_BUFFER_SIZE];
 #endif
-}UITxSerialDataFrame;
+};
 
 typedef enum{
     HOST_CMD_NO_CMD, /*No Params*/
@@ -146,4 +131,17 @@ typedef enum{
   End Section --> Communication structure
 ==================================================
  */
+
+enum BootloaderCommunication{
+    Communication_UART,
+    Communication_CAN,
+};
+
+typedef enum BL_CMD_EXEC_STATUS{
+    BL_CMD_EXEC_SUCCEED_STATUS,
+    BL_CMD_EXEC_FAILED_STATUS,
+} BL_Exec_St;
+
+
+
 #endif // COMMON_H

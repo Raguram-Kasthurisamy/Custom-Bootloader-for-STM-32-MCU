@@ -2,7 +2,7 @@
 #define COMMON_H
 /*
  * File Name --> common.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Brief	 --> Contain common structure of send/receive data of serial communication and
  *               order of shown elements in gui

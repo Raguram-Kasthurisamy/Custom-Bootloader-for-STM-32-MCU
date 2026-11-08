@@ -1,6 +1,6 @@
 /*
  * File Name --> infosystem.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Brief	 --> Responsible for system information.
  * */

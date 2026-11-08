@@ -1,6 +1,6 @@
 /*
  * File Name --> Driver_Config.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Layer	 --> Configurations
  * Brief	 --> Configurations of system clock.

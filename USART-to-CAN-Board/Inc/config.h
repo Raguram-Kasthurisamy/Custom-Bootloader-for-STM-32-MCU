@@ -1,6 +1,6 @@
 /*
  * File Name --> config.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Layer	 --> Application
  * Brief	 --> Configurations of USART to CAN board.

@@ -2,7 +2,7 @@
 #define COMMUNICATION_H
 /*
  * File Name --> communication.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Brief	 --> Communication with board.
  * */

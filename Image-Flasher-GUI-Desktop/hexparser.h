@@ -1,6 +1,6 @@
 /*
  * File Name --> hexparser.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Brief	 --> Parse hex file.
  * */

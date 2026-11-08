@@ -1,6 +1,6 @@
 /*
  * File Name --> Driver_SystemInitialization.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Layer	 --> Configurations
  * Brief	 --> Implementation of system initialization.

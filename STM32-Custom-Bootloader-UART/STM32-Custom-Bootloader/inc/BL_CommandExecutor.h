@@ -1,6 +1,6 @@
 /*
  * File Name --> BL_CommandExecutor.h
- * Author	 --> Ahmed Mohamed Abd-Elfattah
+ * Author	 --> Raguram Kasthurisamy
  * Version	 --> 1.0.0
  * Layer	 --> Bootloader
  * Brief	 --> Provides API for Command executor functions.
