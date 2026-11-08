@@ -3,7 +3,7 @@ The STM32 Microcontroller Bootloader is a robust and versatile firmware solution
 
 In addition, this project includes a Qt C++ Graphical User Interface (GUI) application that enhances the bootloader's functionality. This GUI facilates the process of flashing images to the STM32 microcontroller, making the software update procedure even more user-friendly.
 
-![Alt text](STM32-Custom-Bootloader-GUI.png)
+
 
 ## Table of Contents
 - [Features](#features)
